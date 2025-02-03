@@ -35,7 +35,7 @@ def download_urls():
     """
     Punto de entrada para manejar descargas concurrentes.
     """
-    urls = [f"http://example.com/file{i}" for i in range(1, 11)]  # Lista de ejemplo
+    urls = [f"http://example.com/file{i}" for i in range(1, 100)]  # Lista de ejemplo
     logger.info(f"Iniciando descargas para {len(urls)} URLs...")
     results = asyncio.run(download_urls_concurrently(urls))
     logger.info(f"Descargas completadas: {len([r for r in results if r is not None])} exitosas.")
