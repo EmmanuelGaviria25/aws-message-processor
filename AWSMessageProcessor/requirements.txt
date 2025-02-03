@@ -1,0 +1,7 @@
+boto3
+pymongo
+aiohttp
+pandas
+pyodbc
+python-dotenv
+pytest
